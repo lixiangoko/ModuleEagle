@@ -102,9 +102,13 @@
         android:background="@mipmap/ditu"
         android:textColor="@color/red" />
 
-    <Button
+    <TextView
         android:id="@+id/button_long"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="长图片加载" />
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="长图片加载"
+        android:textColor="@color/white" />
 </LinearLayout>
