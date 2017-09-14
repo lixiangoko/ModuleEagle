@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private EditText content_et;
     private TextView name, time_tv, text_tv;
     private ImageView imageView;
-    private Button longPhoto;
+    private TextView longPhoto;
 
     @Nullable
     @Override
@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         time_tv = (TextView) view.findViewById(R.id.time_tv);
         text_tv = (TextView) view.findViewById(R.id.text_tv);
         imageView = (ImageView) view.findViewById(R.id.image_iv);
-        longPhoto = (Button) view.findViewById(R.id.button_long);
+        longPhoto = (TextView) view.findViewById(R.id.button_long);
         return view;
     }
 
