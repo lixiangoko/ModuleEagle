@@ -97,7 +97,7 @@
 
     <ImageView
         android:id="@+id/button_map"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@mipmap/ditu"
         android:textColor="@color/red" />
@@ -111,4 +111,14 @@
         android:gravity="center"
         android:text="长图片加载"
         android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/business_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@color/alpha_gray"
+        android:gravity="center"
+        android:text="营业执照识别"
+        android:textSize="18sp" />
 </LinearLayout>

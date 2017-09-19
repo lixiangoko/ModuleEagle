@@ -36,7 +36,8 @@
         <activity
             android:name=".activity.MapActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity android:name=".activity.LongPhotoActivity"></activity>
+        <activity android:name=".activity.LongPhotoActivity" />
+        <activity android:name=".activity.BusinessActivity"></activity>
     </application>
 
 </manifest>

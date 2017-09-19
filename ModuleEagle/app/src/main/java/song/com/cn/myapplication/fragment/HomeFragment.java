@@ -14,12 +14,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import song.com.cn.myapplication.R;
+import song.com.cn.myapplication.activity.BusinessActivity;
 import song.com.cn.myapplication.activity.LongPhotoActivity;
 import song.com.cn.myapplication.activity.MapActivity;
 import song.com.cn.myapplication.bean.WeatherBean;
 import song.com.cn.myapplication.bean.WeatherBean.ResultsBean;
 import song.com.cn.myapplication.interfaces.ResponseResult;
-import song.com.cn.myapplication.service.GoServiceUtils;
+import song.com.cn.myapplication.service.ServiceCallback;
 import song.com.cn.myapplication.utils.CommonUtils;
 import song.com.cn.myapplication.utils.ServiceUrl;
 
@@ -35,7 +36,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private EditText content_et;
     private TextView name, time_tv, text_tv;
     private ImageView imageView;
-    private TextView longPhoto;
+    private TextView longPhoto, business_tv;
 
     @Nullable
     @Override
@@ -49,13 +50,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         text_tv = (TextView) view.findViewById(R.id.text_tv);
         imageView = (ImageView) view.findViewById(R.id.image_iv);
         longPhoto = (TextView) view.findViewById(R.id.button_long);
+        business_tv = (TextView) view.findViewById(R.id.business_tv);
         return view;
     }
 
     @Override
     public void onStart() {
         super.onStart();
-
         cha_tian_qi.setOnClickListener(this);
         longPhoto.setOnClickListener(this);
         button_map.setOnClickListener(this);
@@ -116,7 +117,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private void getData(String name) {
         String url = ServiceUrl.WEATHER_URL + "&location=" + name + "&language=zh-Hans&unit=c";
 //        Log.d("HomeFragment", "------------url-----" + url);
-        GoServiceUtils.get(url, new ResponseResult() {
+        ServiceCallback.get(url, new ResponseResult() {
             @Override
             public void onSuccess(Object o) {
 //                Log.d("HomeFragment", "------------onSuccess-----" + o);
@@ -159,6 +160,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.button_map:
                 Intent intent = new Intent(getActivity(), MapActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.business_tv://营业执照
+                Intent intent2 = new Intent(getActivity(), BusinessActivity.class);
+                startActivity(intent2);
                 break;
         }
     }

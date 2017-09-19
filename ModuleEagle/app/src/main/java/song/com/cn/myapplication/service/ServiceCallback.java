@@ -14,7 +14,7 @@ import song.com.cn.myapplication.interfaces.ResponseResult;
  * @Description:
  */
 
-public class GoServiceUtils {
+public class ServiceCallback {
     //普通的GET请求
     public static void get(String url, final ResponseResult responseResult) {
         OkGo.<String>get(url).cacheKey("homefragment").execute(new StringCallback() {
