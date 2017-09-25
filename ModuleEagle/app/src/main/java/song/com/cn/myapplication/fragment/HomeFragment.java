@@ -60,6 +60,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         cha_tian_qi.setOnClickListener(this);
         longPhoto.setOnClickListener(this);
         button_map.setOnClickListener(this);
+        business_tv.setOnClickListener(this);
 
         getData("深圳");
     }
