@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import song.com.cn.myapplication.R;
-import song.com.cn.myapplication.activity.BusinessActivity;
 import song.com.cn.myapplication.activity.LongPhotoActivity;
 import song.com.cn.myapplication.activity.MapActivity;
 import song.com.cn.myapplication.bean.WeatherBean;
@@ -163,8 +162,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.business_tv://营业执照
-                Intent intent2 = new Intent(getActivity(), BusinessActivity.class);
-                startActivity(intent2);
                 break;
         }
     }
