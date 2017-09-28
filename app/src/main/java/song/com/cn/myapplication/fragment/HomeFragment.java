@@ -49,6 +49,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         text_tv = (TextView) view.findViewById(R.id.text_tv);
         imageView = (ImageView) view.findViewById(R.id.image_iv);
         longPhoto = (TextView) view.findViewById(R.id.button_long);
+
         business_tv = (TextView) view.findViewById(R.id.business_tv);
         return view;
     }
