@@ -14,7 +14,11 @@ import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import java.io.File;
 
 import song.com.cn.myapplication.R;
-
+/**
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 public class LongPhotoActivity extends BaseActivity {
     private SubsamplingScaleImageView imageView;
 

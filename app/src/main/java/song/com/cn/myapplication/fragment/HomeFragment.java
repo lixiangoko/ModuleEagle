@@ -24,10 +24,10 @@ import song.com.cn.myapplication.utils.CommonUtils;
 import song.com.cn.myapplication.utils.ServiceUrl;
 
 /**
- * @author lixiangsong
- * @date 创建时间 : 2017/8/30
- * @Description:
- */
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     private ImageView button_map;

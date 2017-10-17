@@ -10,10 +10,10 @@ import android.widget.Toast;
 import com.lzy.okgo.OkGo;
 
 /**
- * @author lixiangsong
- * @date 创建时间 : 2017/8/30
- * @Description:
- */
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 
 public abstract class BaseActivity extends FragmentActivity {
 

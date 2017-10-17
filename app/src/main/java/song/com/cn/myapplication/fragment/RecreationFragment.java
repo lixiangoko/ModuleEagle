@@ -15,11 +15,10 @@ import song.com.cn.myapplication.R;
 import song.com.cn.myapplication.fold.MyAdapter;
 
 /**
- * @author lixiangsong
- * @date 创建时间 : 2017/8/30
- * @Description:
- */
-
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 public class RecreationFragment extends Fragment {
     private ExpandableListView expandableListView;
     private MyAdapter myAdapter;
@@ -35,9 +34,7 @@ public class RecreationFragment extends Fragment {
 
     private void initView(View view) {
         expandableListView = (ExpandableListView) view.findViewById(R.id.expendablelistview);
-
         addData("幼稚园同学", new String[]{"满20减5", "折扣商品8.8折起 ", "消费满100送咖啡2杯", "可开发票/增值型发票", "新用户立减3元", "08:10~09:10 可享受9折优惠"});
-
     }
 
     /**
