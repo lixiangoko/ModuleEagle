@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import song.com.cn.myapplication.R;
-
+/**
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 public class TextActivity extends AppCompatActivity {
 
     private TextView tex_one;

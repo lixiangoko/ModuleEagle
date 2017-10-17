@@ -14,7 +14,11 @@ import song.com.cn.myapplication.fragment.HomeFragment;
 import song.com.cn.myapplication.fragment.RecreationFragment;
 import song.com.cn.myapplication.fragment.SetFragment;
 import song.com.cn.myapplication.fragment.ShopFragment;
-
+/**
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 public class MainActivity extends BaseActivity {
     private String[] tab = {"首页", "娱乐", "购物", "个人"};
     private TabLayout tableLayout;

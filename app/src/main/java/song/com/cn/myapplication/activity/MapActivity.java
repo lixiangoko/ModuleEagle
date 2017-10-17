@@ -9,10 +9,10 @@ import com.amap.api.maps.model.MyLocationStyle;
 import song.com.cn.myapplication.R;
 
 /**
- * @author lixiangsong
- * @date :2017/9/1
- * @Description: 地图
- */
+* @date :2017/10/17
+* @author lixiang
+* @Description:
+*/
 public class MapActivity extends BaseActivity {
     private MapView map_mv;
     private MyLocationStyle myLocationStyle;
