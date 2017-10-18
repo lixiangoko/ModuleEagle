@@ -24,10 +24,10 @@ import song.com.cn.myapplication.utils.CommonUtils;
 import song.com.cn.myapplication.utils.ServiceUrl;
 
 /**
-* @date :2017/10/17
-* @author lixiang
-* @Description:
-*/
+ * @author lixiang
+ * @date :2017/10/17
+ * @Description:
+ */
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     private ImageView button_map;
@@ -117,11 +117,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     private void getData(String name) {
         String url = ServiceUrl.WEATHER_URL + "&location=" + name + "&language=zh-Hans&unit=c";
-//        Log.d("HomeFragment", "------------url-----" + url);
         ServiceCallback.get(url, new ResponseResult() {
             @Override
             public void onSuccess(Object o) {
-//                Log.d("HomeFragment", "------------onSuccess-----" + o);
                 try {
                     WeatherBean weatherBean = (WeatherBean) CommonUtils.getGson(o.toString(), WeatherBean.class);
                     setUI(weatherBean.getResults().get(0));
@@ -150,7 +148,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.cha_tian_qi: //查询按钮
+            case R.id.cha_tian_qi:
+                //查询按钮
                 String name = content_et.getText().toString().trim();
                 getData(name);
                 break;
@@ -162,8 +161,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 Intent intent = new Intent(getActivity(), MapActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.business_tv://营业执照
+            case R.id.business_tv:
+                //营业执照
                 break;
+            default:
         }
     }
 }

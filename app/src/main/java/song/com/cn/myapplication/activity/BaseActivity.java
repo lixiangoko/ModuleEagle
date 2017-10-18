@@ -10,10 +10,10 @@ import android.widget.Toast;
 import com.lzy.okgo.OkGo;
 
 /**
-* @date :2017/10/17
-* @author lixiang
-* @Description:
-*/
+ * @author lixiang
+ * @date :2017/10/17
+ * @Description:
+ */
 
 public abstract class BaseActivity extends FragmentActivity {
 
@@ -58,12 +58,20 @@ public abstract class BaseActivity extends FragmentActivity {
         startActivity(intent);
     }
 
-    // short吐司
+    /**
+     * short吐司
+     *
+     * @param text
+     */
     public void toast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
-    // long吐司
+    /**
+     * long吐司
+     *
+     * @param text
+     */
     public void log(String text) {
         Log.i(this.getLocalClassName(), "--------" + text);
     }
