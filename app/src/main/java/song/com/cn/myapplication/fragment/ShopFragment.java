@@ -28,11 +28,10 @@ import song.com.cn.myapplication.view.XYMarkerView;
 import static android.graphics.Typeface.MONOSPACE;
 
 /**
- * @author lixiangsong
- * @date 创建时间 : 2017/8/30
- * @Description:
- */
-
+* @date :2017/10/20
+* @author lixiang
+* @Description:
+*/
 public class ShopFragment extends Fragment {
     private View view;
     private BarChart mChart;
