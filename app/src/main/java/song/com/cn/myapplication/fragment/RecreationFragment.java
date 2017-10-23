@@ -1,5 +1,6 @@
 package song.com.cn.myapplication.fragment;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +19,12 @@ import song.com.cn.myapplication.fold.MyAdapter;
 /**
 * @date :2017/10/17
 * @author lixiang
-* @Description:
+* @Description: 外卖界面
 */
 public class RecreationFragment extends Fragment {
     private ExpandableListView expandableListView;
     private MyAdapter myAdapter;
-
-
+    private TextView jiage;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -34,6 +35,9 @@ public class RecreationFragment extends Fragment {
 
     private void initView(View view) {
         expandableListView = (ExpandableListView) view.findViewById(R.id.expendablelistview);
+        jiage = (TextView) view.findViewById(R.id.jia_ge_tv);
+        //中间横线
+        jiage.getPaint().setFlags(Paint. STRIKE_THRU_TEXT_FLAG );
         addData("幼稚园同学", new String[]{"满20减5", "折扣商品8.8折起 ", "消费满100送咖啡2杯", "可开发票/增值型发票", "新用户立减3元", "08:10~09:10 可享受9折优惠"});
     }
 
