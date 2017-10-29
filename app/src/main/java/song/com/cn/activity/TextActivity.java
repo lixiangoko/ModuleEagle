@@ -1,10 +1,11 @@
-package song.com.cn.myapplication.activity;
+package song.com.cn.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import song.com.cn.myapplication.R;
+import song.com.cn.R;
+
 /**
 * @date :2017/10/17
 * @author lixiang

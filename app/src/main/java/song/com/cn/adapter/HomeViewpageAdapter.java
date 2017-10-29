@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.adapter;
+package song.com.cn.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import java.util.List;
+import song.com.cn.R;
 
-import song.com.cn.myapplication.R;
 
 /**
  * @author lixiangsong

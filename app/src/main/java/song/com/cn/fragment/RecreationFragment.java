@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.fragment;
+package song.com.cn.fragment;
 
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import song.com.cn.myapplication.R;
-import song.com.cn.myapplication.fold.MyAdapter;
+import song.com.cn.R;
+import song.com.cn.fold.MyAdapter;
 
 /**
 * @date :2017/10/17

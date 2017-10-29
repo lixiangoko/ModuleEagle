@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.fragment;
+package song.com.cn.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -20,10 +20,10 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-import song.com.cn.myapplication.R;
-import song.com.cn.myapplication.view.DayAxisValueFormatter;
-import song.com.cn.myapplication.view.MyAxisValueFormatter;
-import song.com.cn.myapplication.view.XYMarkerView;
+import song.com.cn.R;
+import song.com.cn.view.DayAxisValueFormatter;
+import song.com.cn.view.MyAxisValueFormatter;
+import song.com.cn.view.XYMarkerView;
 
 import static android.graphics.Typeface.MONOSPACE;
 

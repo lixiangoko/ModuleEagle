@@ -1,14 +1,12 @@
-package song.com.cn.myapplication.fold;
+package song.com.cn.fold;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
-
 import java.util.List;
-
-import song.com.cn.myapplication.R;
+import song.com.cn.R;
 
 /**
  * @author lixiangsong

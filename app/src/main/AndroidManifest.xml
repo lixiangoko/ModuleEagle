@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="song.com.cn.myapplication">
+    package="song.com.cn">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -47,6 +47,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity android:name=".activity.LongPhotoActivity" />
         <activity android:name=".activity.TextActivity" />
+        <activity android:name="song.com.cn.personal.CustomActivity"/>
     </application>
 
 </manifest>

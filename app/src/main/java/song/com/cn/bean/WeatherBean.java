@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.bean;
+package song.com.cn.bean;
 
 import java.io.Serializable;
 import java.util.List;

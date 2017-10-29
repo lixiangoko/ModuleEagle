@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.view;
+package song.com.cn.view;
 
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;

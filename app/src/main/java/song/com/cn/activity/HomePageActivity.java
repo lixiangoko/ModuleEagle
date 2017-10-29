@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.activity;
+package song.com.cn.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -7,11 +7,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.RadioButton;
 
-import song.com.cn.myapplication.R;
-import song.com.cn.myapplication.fragment.HomeFragment;
-import song.com.cn.myapplication.fragment.RecreationFragment;
-import song.com.cn.myapplication.fragment.SetFragment;
-import song.com.cn.myapplication.fragment.ShopFragment;
+import song.com.cn.R;
+import song.com.cn.fragment.HomeFragment;
+import song.com.cn.fragment.RecreationFragment;
+import song.com.cn.fragment.SetFragment;
+import song.com.cn.fragment.ShopFragment;
 
 /**
  * @author lixiang

@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.service;
+package song.com.cn.service;
 
 import android.util.Log;
 
@@ -6,7 +6,8 @@ import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
 
-import song.com.cn.myapplication.interfaces.ResponseResult;
+import song.com.cn.interfaces.ResponseResult;
+
 
 /**
  * @author lixiangsong

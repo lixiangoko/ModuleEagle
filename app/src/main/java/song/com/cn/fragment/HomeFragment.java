@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.fragment;
+package song.com.cn.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,15 +13,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import song.com.cn.myapplication.R;
-import song.com.cn.myapplication.activity.LongPhotoActivity;
-import song.com.cn.myapplication.activity.MapActivity;
-import song.com.cn.myapplication.bean.WeatherBean;
-import song.com.cn.myapplication.bean.WeatherBean.ResultsBean;
-import song.com.cn.myapplication.interfaces.ResponseResult;
-import song.com.cn.myapplication.service.ServiceCallback;
-import song.com.cn.myapplication.utils.CommonUtils;
-import song.com.cn.myapplication.utils.ServiceUrl;
+import song.com.cn.R;
+import song.com.cn.activity.LongPhotoActivity;
+import song.com.cn.activity.MapActivity;
+import song.com.cn.bean.WeatherBean;
+import song.com.cn.interfaces.ResponseResult;
+import song.com.cn.personal.CustomActivity;
+import song.com.cn.service.ServiceCallback;
+import song.com.cn.utils.CommonUtils;
+import song.com.cn.utils.ServiceUrl;
 
 /**
  * @author lixiang
@@ -65,7 +65,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         getData("深圳");
     }
 
-    private void setUI(ResultsBean resultsBean) {
+    private void setUI(WeatherBean.ResultsBean resultsBean) {
         name.setText(resultsBean.getLocation().getName());
         time_tv.setText(resultsBean.getLast_update());
         text_tv.setText(resultsBean.getNow().getText());
@@ -162,7 +162,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.business_tv:
-                //营业执照
+                //自定义view
+                Intent intent2 = new Intent(getActivity(), CustomActivity.class);
+                startActivity(intent2);
                 break;
             default:
         }

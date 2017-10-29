@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.utils;
+package song.com.cn.utils;
 
 /**
  * @author lixiangsong

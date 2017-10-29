@@ -1,5 +1,5 @@
 
-package song.com.cn.myapplication.view;
+package song.com.cn.view;
 
 import android.content.Context;
 import android.widget.TextView;
@@ -12,7 +12,7 @@ import com.github.mikephil.charting.utils.MPPointF;
 
 import java.text.DecimalFormat;
 
-import song.com.cn.myapplication.R;
+import song.com.cn.R;
 
 /**
  * Custom implementation of the MarkerView.

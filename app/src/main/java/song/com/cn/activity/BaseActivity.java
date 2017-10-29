@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.activity;
+package song.com.cn.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

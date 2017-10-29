@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.fragment;
+package song.com.cn.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import song.com.cn.myapplication.R;
+import song.com.cn.R;
+
 
 /**
  * @author lixiangsong

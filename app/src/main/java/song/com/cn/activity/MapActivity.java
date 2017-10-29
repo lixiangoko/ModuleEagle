@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.activity;
+package song.com.cn.activity;
 
 import android.os.Bundle;
 
@@ -6,7 +6,8 @@ import com.amap.api.maps.AMap;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.model.MyLocationStyle;
 
-import song.com.cn.myapplication.R;
+import song.com.cn.R;
+
 
 /**
 * @date :2017/10/17

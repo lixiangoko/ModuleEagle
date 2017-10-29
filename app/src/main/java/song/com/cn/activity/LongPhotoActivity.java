@@ -1,4 +1,4 @@
-package song.com.cn.myapplication.activity;
+package song.com.cn.activity;
 
 import android.graphics.PointF;
 import android.net.Uri;
@@ -13,7 +13,8 @@ import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 
 import java.io.File;
 
-import song.com.cn.myapplication.R;
+import song.com.cn.R;
+
 /**
 * @date :2017/10/17
 * @author lixiang

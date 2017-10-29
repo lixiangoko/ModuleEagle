@@ -119,6 +119,6 @@
         android:layout_gravity="center"
         android:background="@color/alpha_gray"
         android:gravity="center"
-        android:text="待定"
+        android:text="自定义"
         android:textSize="18sp" />
 </LinearLayout>
