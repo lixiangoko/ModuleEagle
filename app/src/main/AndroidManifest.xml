@@ -47,7 +47,8 @@
             android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity android:name=".activity.LongPhotoActivity" />
         <activity android:name=".activity.TextActivity" />
-        <activity android:name="song.com.cn.personal.CustomActivity"/>
+        <activity android:name=".personal.CustomActivity" />
+        <activity android:name=".pure.PureCodeActivity"></activity>
     </application>
 
 </manifest>

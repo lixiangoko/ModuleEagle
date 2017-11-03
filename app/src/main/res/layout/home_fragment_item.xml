@@ -121,4 +121,15 @@
         android:gravity="center"
         android:text="自定义"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/alpha_gray"
+        android:gravity="center"
+        android:text="纯代码"
+        android:textSize="18sp" />
 </LinearLayout>

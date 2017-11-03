@@ -19,6 +19,7 @@ import song.com.cn.activity.MapActivity;
 import song.com.cn.bean.WeatherBean;
 import song.com.cn.interfaces.ResponseResult;
 import song.com.cn.personal.CustomActivity;
+import song.com.cn.pure.PureCodeActivity;
 import song.com.cn.service.ServiceCallback;
 import song.com.cn.utils.CommonUtils;
 import song.com.cn.utils.ServiceUrl;
@@ -33,7 +34,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private ImageView button_map;
     private Button cha_tian_qi;
     private EditText content_et;
-    private TextView name, time_tv, text_tv;
+    private TextView name, time_tv, textTv, pure_tv;
     private ImageView imageView;
     private TextView longPhoto, business_tv;
 
@@ -46,7 +47,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         content_et = (EditText) view.findViewById(R.id.content_et);
         name = (TextView) view.findViewById(R.id.name_adree_tv);
         time_tv = (TextView) view.findViewById(R.id.time_tv);
-        text_tv = (TextView) view.findViewById(R.id.text_tv);
+        textTv = (TextView) view.findViewById(R.id.text_tv);
+        pure_tv = (TextView) view.findViewById(R.id.pure_tv);
         imageView = (ImageView) view.findViewById(R.id.image_iv);
         longPhoto = (TextView) view.findViewById(R.id.button_long);
 
@@ -61,6 +63,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         longPhoto.setOnClickListener(this);
         button_map.setOnClickListener(this);
         business_tv.setOnClickListener(this);
+        pure_tv.setOnClickListener(this);
 
         getData("深圳");
     }
@@ -68,7 +71,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private void setUI(WeatherBean.ResultsBean resultsBean) {
         name.setText(resultsBean.getLocation().getName());
         time_tv.setText(resultsBean.getLast_update());
-        text_tv.setText(resultsBean.getNow().getText());
+        textTv.setText(resultsBean.getNow().getText());
         int possion = Integer.valueOf(resultsBean.getNow().getCode());
         setBg(possion);
     }
@@ -165,6 +168,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 //自定义view
                 Intent intent2 = new Intent(getActivity(), CustomActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.pure_tv:
+                //纯代码
+                Intent intent3 = new Intent(getActivity(), PureCodeActivity.class);
+                startActivity(intent3);
                 break;
             default:
         }
