@@ -19,6 +19,7 @@ import song.com.cn.activity.MapActivity;
 import song.com.cn.bean.WeatherBean;
 import song.com.cn.interfaces.ResponseResult;
 import song.com.cn.personal.CustomActivity;
+import song.com.cn.pure.AsyncHttpActivity;
 import song.com.cn.pure.PureCodeActivity;
 import song.com.cn.service.ServiceCallback;
 import song.com.cn.utils.CommonUtils;
@@ -36,7 +37,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private EditText content_et;
     private TextView name, time_tv, textTv, pure_tv;
     private ImageView imageView;
-    private TextView longPhoto, business_tv;
+    private TextView longPhoto, business_tv, async_http_bt;
 
     @Nullable
     @Override
@@ -53,6 +54,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         longPhoto = (TextView) view.findViewById(R.id.button_long);
 
         business_tv = (TextView) view.findViewById(R.id.business_tv);
+        async_http_bt = (TextView) view.findViewById(R.id.async_http_bt);
         return view;
     }
 
@@ -64,6 +66,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         button_map.setOnClickListener(this);
         business_tv.setOnClickListener(this);
         pure_tv.setOnClickListener(this);
+        async_http_bt.setOnClickListener(this);
 
         getData("深圳");
     }
@@ -150,6 +153,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        Intent intent = new Intent();
         switch (v.getId()) {
             case R.id.cha_tian_qi:
                 //查询按钮
@@ -157,24 +161,25 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 getData(name);
                 break;
             case R.id.button_long:
-                Intent intent1 = new Intent(getActivity(), LongPhotoActivity.class);
-                startActivity(intent1);
+                intent.setClass(getActivity(), LongPhotoActivity.class);
                 break;
             case R.id.button_map:
-                Intent intent = new Intent(getActivity(), MapActivity.class);
-                startActivity(intent);
+                intent.setClass(getActivity(), MapActivity.class);
                 break;
             case R.id.business_tv:
                 //自定义view
-                Intent intent2 = new Intent(getActivity(), CustomActivity.class);
-                startActivity(intent2);
+                intent.setClass(getActivity(), CustomActivity.class);
                 break;
             case R.id.pure_tv:
                 //纯代码
-                Intent intent3 = new Intent(getActivity(), PureCodeActivity.class);
-                startActivity(intent3);
+                intent.setClass(getActivity(), PureCodeActivity.class);
+                break;
+            case R.id.async_http_bt:
+                intent.setClass(getActivity(), AsyncHttpActivity.class);
                 break;
             default:
+
         }
+        startActivity(intent);
     }
 }

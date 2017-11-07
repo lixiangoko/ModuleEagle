@@ -128,8 +128,19 @@
         android:layout_height="45dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@color/alpha_gray"
+        android:background="@color/mainColor"
         android:gravity="center"
         android:text="纯代码"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/async_http_bt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/cf4e191"
+        android:gravity="center"
+        android:text="AsyncHttp"
         android:textSize="18sp" />
 </LinearLayout>

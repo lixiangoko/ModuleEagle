@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">老鹰</string>
     <string name="back">返回</string>
     <string name="title_activity_costom">CostomActivity</string>
 </resources>

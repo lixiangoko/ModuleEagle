@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="song.com.cn.pure.AsyncHttpActivity">
+
+    <Button
+        android:id="@+id/get_async_bt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="get请求" />
+
+    <Button
+        android:id="@+id/post_async_bt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Post请求" />
+
+    <Button
+        android:id="@+id/download_async_bt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Download请求" />
+
+    <Button
+        android:id="@+id/upload_async_bt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="upload请求" />
+
+
+</LinearLayout>

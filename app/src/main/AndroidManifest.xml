@@ -20,10 +20,12 @@
     <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
     <application
         android:name=".activity.ProjectApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/laoying"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -48,7 +50,8 @@
         <activity android:name=".activity.LongPhotoActivity" />
         <activity android:name=".activity.TextActivity" />
         <activity android:name=".personal.CustomActivity" />
-        <activity android:name=".pure.PureCodeActivity"></activity>
+        <activity android:name=".pure.PureCodeActivity" />
+        <activity android:name=".pure.AsyncHttpActivity" />
     </application>
 
 </manifest>
