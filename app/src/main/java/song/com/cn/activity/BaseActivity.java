@@ -21,6 +21,7 @@ public abstract class BaseActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initCreate(savedInstanceState);
+		
         initData();
 
     }
