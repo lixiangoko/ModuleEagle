@@ -142,5 +142,6 @@
         android:background="@color/cf4e191"
         android:gravity="center"
         android:text="AsyncHttp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:visibility="gone" />
 </LinearLayout>
