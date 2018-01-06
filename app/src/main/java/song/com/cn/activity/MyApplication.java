@@ -10,7 +10,7 @@ import com.lzy.okgo.OkGo;
 * @Description:
 */
 
-public class ProjectApplication extends Application {
+public class MyApplication extends Application {
 
     @Override
     public void onCreate() {
