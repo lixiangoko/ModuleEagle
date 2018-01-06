@@ -23,7 +23,7 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
-        android:name=".activity.ProjectApplication"
+        android:name=".activity.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/laoying"
         android:label="@string/app_name"

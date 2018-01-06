@@ -21,14 +21,15 @@ import song.com.cn.fragment.ShopFragment;
 public class HomePageActivity extends FragmentActivity implements View.OnClickListener {
     private RadioButton shouye, maimai, chat, shop, geren;
     private FragmentManager fManager;
-    private HomeFragment homeFragment;
     //第一个
-    private RecreationFragment recreationFragment;
+    private HomeFragment homeFragment;
     //第二个
-    private ShopFragment shopFragment;
+    private RecreationFragment recreationFragment;
     //第三个
     private SetFragment setFragment;
     //第四个
+    private ShopFragment shopFragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

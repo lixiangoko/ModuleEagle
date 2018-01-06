@@ -1,6 +1,8 @@
 package song.com.cn.fragment;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +14,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
+import com.stx.xhb.xbanner.XBanner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import song.com.cn.R;
 import song.com.cn.activity.LongPhotoActivity;
@@ -38,6 +46,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private TextView name, time_tv, textTv, pure_tv;
     private ImageView imageView;
     private TextView longPhoto, business_tv, async_http_bt;
+    private XBanner xbanner_xb;
+    private List<Integer> listBanner = new ArrayList<Integer>();
+    public static final String ANDROID_RESOURCE = "android.resource://";
+    public static final String FOREWARD_SLASH = "/";
 
     @Nullable
     @Override
@@ -52,10 +64,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         pure_tv = (TextView) view.findViewById(R.id.pure_tv);
         imageView = (ImageView) view.findViewById(R.id.image_iv);
         longPhoto = (TextView) view.findViewById(R.id.button_long);
-
+        xbanner_xb = view.findViewById(R.id.xbanner_xb);
         business_tv = (TextView) view.findViewById(R.id.business_tv);
         async_http_bt = (TextView) view.findViewById(R.id.async_http_bt);
         return view;
+    }
+
+    private Uri resourceIdToUri(Context context, int resourceId) {
+        return Uri.parse(ANDROID_RESOURCE + context.getPackageName()
+                + FOREWARD_SLASH + resourceId);
     }
 
     @Override
@@ -69,6 +86,23 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         async_http_bt.setOnClickListener(this);
 
         getData("深圳");
+        listBanner.add(R.mipmap.one);
+        listBanner.add(R.mipmap.meigui);
+        listBanner.add(R.mipmap.sun);
+        xbanner_xb.setData(listBanner, null);
+        xbanner_xb.setmAdapter(new XBanner.XBannerAdapter() {
+            @Override
+            public void loadBanner(XBanner banner, Object model, View view, int position) {
+                Uri uri = resourceIdToUri(getActivity(), listBanner.get(position));
+                Picasso.with(getActivity()).load(uri).into((ImageView) view);
+            }
+        });
+        xbanner_xb.setOnItemClickListener(new XBanner.OnItemClickListener() {
+            @Override
+            public void onItemClick(XBanner banner, int position) {
+                Toast.makeText(getActivity(), "点击 " + position, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void setUI(WeatherBean.ResultsBean resultsBean) {
